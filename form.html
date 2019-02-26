@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<style>
+</style>
+</head>
+<body>
+	<div class="row mt-5">
+		<div class="col-sm-6 offset-sm-3">
+			<form>
+				<div class="form-group">
+					<label for="email">Email address::</label> <input
+						class="form-control" type="email" id="email"
+						placeholder="Email을 입력하세요.">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Password::</label> <input type="password"
+						class="form-control" id="pwd" placeholder="비밀번호를 입력하세요.">
+				</div>
+				<div class="form-group ml-4">
+					<label class="form-check-label"> <input
+						class="form-check-input" type="checkbox"> Remember me
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="mt-5">
+			<form class="form-inline">
+				<label for="email">Email address:</label> <input type="email"
+					class="form-control" id="email"> <label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd">
+				<div class="form-check">
+					<label class="form-check-label"> <input
+						class="form-check-input" type="checkbox"> Remember me
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="form-check-inline">
+			<label class="form-check-label"> <input type="checkbox"
+				class="form-check-input" value="">Option1
+			</label>
+		</div>
+		<div class="form-check-inline">
+			<label class="form-check-label"> <input type="checkbox"
+				class="form-check-input" value="">Option2
+			</label>
+		</div>
+		<div class="form-check-inline">
+			<label class="form-check-label"> <input type="checkbox"
+				class="form-check-input" value="">Option3
+			</label>
+		</div>
+	</div>
+	<div class="container mt-3">
+		<div class="form-check">
+			<label class="form-check-label"> <input type="radio"
+				class="form-check-input" name="optradio">Option1
+			</label>
+		</div>
+		<div class="form-check">
+			<label class="form-check-label"> <input type="radio"
+				class="form-check-input" name="optradio">Option2
+			</label>
+		</div>
+		<div class="form-check disabled">
+			<label class="form-check-label"> <input type="radio"
+				class="form-check-input" name="optradio">Option3
+			</label>
+		</div>
+	</div>
+
+	<div class="container mt-3">
+		<label for="sel1">Select list:</label> <select class="form-control"
+			id="sel1">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+	</div>
+
+	<div class="container mt-3">
+		<input type="text" class="form-control form-control-sm"
+			placeholder="ID"> <input type="text"
+			class="form-control form-control" placeholder="PW"> <input
+			type="text" class="form-control form-control-lg" placeholder="EMail">
+	</div>
+
+	<div class="container mt-3">
+		<input type="range" class="form-control-range"> <input
+			type="file" class="form-control-file border">
+	</div>
+
+	<div class="container mt-3">
+		<form>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">@</span>
+				</div>
+				<input type="text" class="form-control" placeholder="Username">
+			</div>
+			<div class="input-group mb-3">
+				<input type="text" class="form-control" placeholder="Your Email">
+				<div class="input-group-append">
+					<span class="input-group-text">@example.com</span>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<div class="container mt-3">
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<div class="input-group-text">
+					<input type="checkbox">
+				</div>
+			</div>
+			<input type="text" class="form-control" placeholder="Some text">
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<div class="input-group-text">
+					<input type="radio">
+				</div>
+			</div>
+			<input type="text" class="form-control" placeholder="Some text">
+		</div>
+		<div class="custom-control custom-radio">
+			<input type="radio" class="custom-control-input" id="customRadio" name="example1">
+			<label class="custom-control-label" for="customRadio">Custom raido</label>
+		</div>
+		
+		<form>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="switch1">
+				<label class="custom-control-label" for="switch1">Toggle me</label>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
