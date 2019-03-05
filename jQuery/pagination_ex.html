@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script>
+
+$(function() {	
+	setInterval(function() {
+		var items = $('.page-item');
+		var idx = parseInt(Math.random() * items.length) + 1;
+		items.removeClass('active');
+		items.eq(idx-1).addClass('active');
+	}, 1000);
+});
+	
+</script>
+</head>
+<body>
+<body>
+	<div class="container">
+		<h2>Pagination</h2>
+		<ul class="pagination pagination-md justify-content-center">
+			<li class="page-item active"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">4</a></li>
+			<li class="page-item"><a class="page-link" href="#">5</a></li>
+		</ul>
+	</div>
+</body>
+</body>
+
+</html>
